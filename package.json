@@ -4,6 +4,17 @@
   "description": "Fluvea Studio Ultra-Luxury Design System & UI Components",
   "author": "Fluvea Studio (Wespcai)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrewyt/fluvea-ui.git"
+  },
+  "homepage": "https://github.com/emrewyt/fluvea-ui#readme",
+  "bugs": {
+    "url": "https://github.com/emrewyt/fluvea-ui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/fluvea-ui.umd.cjs",
   "module": "dist/fluvea-ui.js",
   "types": "dist/index.d.ts",
