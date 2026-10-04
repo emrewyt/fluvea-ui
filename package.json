@@ -1,0 +1,54 @@
+{
+  "name": "@fluvea/ui",
+  "version": "1.0.0",
+  "description": "Fluvea Studio Ultra-Luxury Design System & UI Components",
+  "author": "Fluvea Studio (Wespcai)",
+  "license": "MIT",
+  "main": "dist/fluvea-ui.umd.cjs",
+  "module": "dist/fluvea-ui.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/fluvea-ui.js",
+      "require": "./dist/fluvea-ui.umd.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode lib && node -e \"require('fs').copyFileSync('src/index.d.ts', 'dist/index.d.ts')\"",
+    "build:lib": "vite build --mode lib && node -e \"require('fs').copyFileSync('src/index.d.ts', 'dist/index.d.ts')\"",
+    "build:demo": "vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.18.0",
+    "clsx": "^2.1.1",
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.7.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.14"
+  }
+}

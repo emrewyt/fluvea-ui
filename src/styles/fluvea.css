@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --fluvea-glow-purple: rgba(168, 85, 247, 0.4);
+    --fluvea-glow-pink: rgba(236, 72, 153, 0.4);
+    --fluvea-glow-cyan: rgba(6, 182, 212, 0.4);
+    --fluvea-glow-emerald: rgba(16, 185, 129, 0.4);
+  }
+}
+
+/* Fluvea Glass Utilities */
+.fluvea-glass-panel {
+  background: rgba(18, 18, 30, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fluvea-glass-border {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* High-End Noise & Scanlines */
+.fluvea-caustic-gleam {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* Handwriting typing & Reveal animations */
+@keyframes writeTyping {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes cursorBlink {
+  50% { border-color: transparent; }
+}
+
+.handwriting-writing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(192, 132, 252, 0.8);
+  animation: writeTyping 2.6s steps(35, end) forwards, cursorBlink 0.75s step-end infinite;
+}
+
+/* Wobble Physics Entrance Animation */
+@keyframes wobbleBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.04);
+  }
+  65% {
+    transform: translateY(4px) scale(0.98);
+  }
+  85% {
+    transform: translateY(-2px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-wobble-bounce {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-wobble-bounce-1 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.08s both;
+}
+
+.animate-wobble-bounce-2 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.18s both;
+}
+
+.animate-wobble-bounce-3 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.28s both;
+}
+
+.animate-wobble-bounce-4 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.38s both;
+}
+
+.animate-wobble-bounce-5 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.48s both;
+}
+
+.animate-wobble-bounce-6 {
+  animation: wobbleBounce 0.85s cubic-bezier(0.34, 1.56, 0.64, 1) 0.58s both;
+}
+
