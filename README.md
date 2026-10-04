@@ -194,4 +194,5 @@ npm run build
 
 ---
 
-© 2026 **Fluvea Studio** • Lead Developer & Architect: **Emre (Wespcai)**
+© 2026 **Fluvea Studio**
+# Sevgilerle, ***[Wespcai.](https://instagram.com/wespcai)***
